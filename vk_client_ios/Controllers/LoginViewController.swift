@@ -14,8 +14,16 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var loginButton: UIButton!
     
+    private var isValid: Bool {
+        if loginTextField.text == "admin" && passwordTextField.text == "admin1" {
+            return true
+        } else {
+            return false
+        }
+    }
+    
     @IBAction func loginButtonTapped(_ sender: UIButton) {
-        if isValid() {
+        if isValid {
             print("Login")
         }
     }
@@ -24,14 +32,6 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("loaded")
-    }
-
-    private func isValid() -> Bool {
-        if loginTextField.text == "admin" && passwordTextField.text == "admin1" {
-            return true
-        } else {
-            return false
-        }
     }
 
 }
