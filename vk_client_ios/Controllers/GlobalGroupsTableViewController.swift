@@ -8,6 +8,14 @@
 import UIKit
 
 class GlobalGroupsTableViewController: UITableViewController {
+    
+    var groups: [Group] = [
+        Group(name: "Food", imageName: "foodImage"),
+        Group(name: "Fashion", imageName: "fashionImage"),
+        Group(name: "Celebrity", imageName: "celebrityImage"),
+        Group(name: "Comics", imageName: "comicsImage"),
+        Group(name: "Cinema", imageName: "cinemaImage")
+    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,25 +29,20 @@ class GlobalGroupsTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return groups.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
+        let cell = tableView.dequeueReusableCell(withIdentifier: "newGroupCell", for: indexPath)
+        cell.imageView?.image = UIImage(named: groups[indexPath.row].imageName)
+        cell.textLabel?.text = groups[indexPath.row].name
 
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.

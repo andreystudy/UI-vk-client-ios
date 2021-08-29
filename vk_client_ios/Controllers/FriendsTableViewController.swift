@@ -9,6 +9,12 @@ import UIKit
 
 class FriendsTableViewController: UITableViewController {
 
+    let users: [User] = [
+        User(name: "Andrew", imageName: "andrewImage"),
+        User(name: "John", imageName: "johnImage"),
+        User(name: "Gwen", imageName: "gwenImage"),
+        User(name: "Tom", imageName: "tomImage")
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,31 +29,32 @@ class FriendsTableViewController: UITableViewController {
     // MARK: - Table view delegate
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "friendSegue", sender: nil)
+        performSegue(withIdentifier: "friendSegue", sender: indexPath)
     }
 
     // MARK: - Table view data source
-    /*
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 1
-    }
  
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 3
+        return users.count
     }
-    */
+    
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
+        let cell = tableView.dequeueReusableCell(withIdentifier: "userCell", for: indexPath)
+        cell.textLabel?.text = users[indexPath.row].name
+        cell.imageView?.image = UIImage(named: users[indexPath.row].imageName)
 
         return cell
     }
-    */
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let photosVC = segue.destination as? PhotosCollectionViewController else {return}
+        let row = (sender as! NSIndexPath).row
+        photosVC.user = users[row]
+    }
+    
 
     /*
     // Override to support conditional editing of the table view.
