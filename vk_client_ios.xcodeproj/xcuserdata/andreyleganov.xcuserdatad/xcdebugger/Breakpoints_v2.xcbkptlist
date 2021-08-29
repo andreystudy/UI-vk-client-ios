@@ -3,4 +3,102 @@
    uuid = "E9C266B5-9C4A-4AA8-AC3B-4877C616458B"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "26C598BA-400D-4D4E-9000-4DD49202D8A0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "vk_client_ios/Controllers/LoginViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "keyboardWasShown(notification:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "26C598BA-400D-4D4E-9000-4DD49202D8A0 - bf46caa12b7e8276"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in vk_client_ios.LoginViewController.keyboardWasShown(notification: Foundation.Notification) -&gt; ()"
+                  moduleName = "vk_client_ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andreyleganov/GeekBrains/%D0%9F%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D0%BA%D0%B8%D0%B8%CC%86%20%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D0%B8%CC%86%D1%81/UI-vk-client-ios/vk_client_ios/Controllers/LoginViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73"
+                  offsetFromSymbolStart = "38">
+               </Location>
+               <Location
+                  uuid = "26C598BA-400D-4D4E-9000-4DD49202D8A0 - 24ed876fd7557fe"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.NSLayoutConstraint) -&gt; Swift.Bool in closure #1 () -&gt; () in vk_client_ios.LoginViewController.keyboardWasShown(notification: Foundation.Notification) -&gt; ()"
+                  moduleName = "vk_client_ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andreyleganov/GeekBrains/%D0%9F%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D0%BA%D0%B8%D0%B8%CC%86%20%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D0%B8%CC%86%D1%81/UI-vk-client-ios/vk_client_ios/Controllers/LoginViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73"
+                  offsetFromSymbolStart = "42">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C4D37B42-E0FF-47F5-9899-45FD8546DA8C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "vk_client_ios/Controllers/LoginViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
+            landmarkName = "keyboardWillBeHidden(notification:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C4D37B42-E0FF-47F5-9899-45FD8546DA8C - 4112bac18f5281df"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in vk_client_ios.LoginViewController.keyboardWillBeHidden(notification: Foundation.Notification) -&gt; ()"
+                  moduleName = "vk_client_ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andreyleganov/GeekBrains/%D0%9F%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D0%BA%D0%B8%D0%B8%CC%86%20%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D0%B8%CC%86%D1%81/UI-vk-client-ios/vk_client_ios/Controllers/LoginViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "83"
+                  endingLineNumber = "83"
+                  offsetFromSymbolStart = "38">
+               </Location>
+               <Location
+                  uuid = "C4D37B42-E0FF-47F5-9899-45FD8546DA8C - bf0d7f81f0a6a402"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.NSLayoutConstraint) -&gt; Swift.Bool in closure #1 () -&gt; () in vk_client_ios.LoginViewController.keyboardWillBeHidden(notification: Foundation.Notification) -&gt; ()"
+                  moduleName = "vk_client_ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andreyleganov/GeekBrains/%D0%9F%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D0%BA%D0%B8%D0%B8%CC%86%20%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D0%B8%CC%86%D1%81/UI-vk-client-ios/vk_client_ios/Controllers/LoginViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "83"
+                  endingLineNumber = "83"
+                  offsetFromSymbolStart = "42">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
