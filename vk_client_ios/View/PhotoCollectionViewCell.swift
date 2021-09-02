@@ -11,4 +11,13 @@ class PhotoCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var imageView: UIImageView!
     
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        imageView.layer.cornerRadius = imageView.frame.height / 2
+    }
+    
+    func config(user: User) {
+        imageView.image = UIImage(named: user.imageName)
+    }
 }
