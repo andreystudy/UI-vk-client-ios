@@ -20,6 +20,8 @@
 		D3E9FD1926DC37D400CBCD23 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E9FD1826DC37D400CBCD23 /* User.swift */; };
 		D3E9FD1B26DC382600CBCD23 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E9FD1A26DC382600CBCD23 /* Group.swift */; };
 		D3E9FD1D26DC3F1400CBCD23 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E9FD1C26DC3F1400CBCD23 /* PhotoCollectionViewCell.swift */; };
+		D3E9FD1F26E11C5A00CBCD23 /* FriendsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E9FD1E26E11C5A00CBCD23 /* FriendsViewCell.swift */; };
+		D3E9FD2126E11F4C00CBCD23 /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E9FD2026E11F4C00CBCD23 /* AvatarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		D3E9FD1826DC37D400CBCD23 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		D3E9FD1A26DC382600CBCD23 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		D3E9FD1C26DC3F1400CBCD23 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		D3E9FD1E26E11C5A00CBCD23 /* FriendsViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewCell.swift; sourceTree = "<group>"; };
+		D3E9FD2026E11F4C00CBCD23 /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 			children = (
 				D3BF6E5F26CDABB60041FC8B /* Main.storyboard */,
 				D3E9FD1C26DC3F1400CBCD23 /* PhotoCollectionViewCell.swift */,
+				D3E9FD1E26E11C5A00CBCD23 /* FriendsViewCell.swift */,
+				D3E9FD2026E11F4C00CBCD23 /* AvatarView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -183,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3E9FD1B26DC382600CBCD23 /* Group.swift in Sources */,
+				D3E9FD2126E11F4C00CBCD23 /* AvatarView.swift in Sources */,
 				D3E9FD1D26DC3F1400CBCD23 /* PhotoCollectionViewCell.swift in Sources */,
 				D3BF6E5E26CDABB60041FC8B /* LoginViewController.swift in Sources */,
 				D3E9FD1226DC16E100CBCD23 /* GroupsTableViewController.swift in Sources */,
@@ -192,6 +199,7 @@
 				D3E9FD1026DC16A100CBCD23 /* FriendsTableViewController.swift in Sources */,
 				D3E9FD1626DC18CD00CBCD23 /* GlobalGroupsTableViewController.swift in Sources */,
 				D3BF6E5C26CDABB60041FC8B /* SceneDelegate.swift in Sources */,
+				D3E9FD1F26E11C5A00CBCD23 /* FriendsViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

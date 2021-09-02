@@ -200,22 +200,71 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="userCell" textLabel="9el-kS-7GO" style="IBUITableViewCellStyleDefault" id="cfG-QC-aQM">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="userCell" id="cfG-QC-aQM" customClass="FriendsViewCell" customModule="vk_client_ios" customModuleProvider="target">
                                 <rect key="frame" x="20" y="49" width="350" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cfG-QC-aQM" id="6IY-g8-nLH">
                                     <rect key="frame" x="0.0" y="0.0" width="320.33333333333331" height="43.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9el-kS-7GO">
-                                            <rect key="frame" x="20" y="0.0" width="292.33333333333331" height="43.666667938232422"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9pQ-8I-hMf" customClass="AvatarView" customModule="vk_client_ios">
+                                            <rect key="frame" x="0.0" y="0.0" width="44" height="43.666666666666664"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V6o-JZ-Rib" customClass="AvatarShadowImage" customModule="vk_client_ios" customModuleProvider="target">
+                                                    <rect key="frame" x="2" y="2" width="40" height="40"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                </view>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0j5-65-jgk" customClass="AvatarImageView" customModule="vk_client_ios" customModuleProvider="target">
+                                                    <rect key="frame" x="2" y="2" width="40" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="0nO-dU-pNX"/>
+                                                        <constraint firstAttribute="width" constant="40" id="DMj-3a-exb"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="4"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                            <color key="value" systemColor="systemGrayColor"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstItem="0j5-65-jgk" firstAttribute="centerX" secondItem="9pQ-8I-hMf" secondAttribute="centerX" id="6F8-uN-BNG"/>
+                                                <constraint firstItem="V6o-JZ-Rib" firstAttribute="width" secondItem="0j5-65-jgk" secondAttribute="width" id="Din-dc-qM8"/>
+                                                <constraint firstItem="V6o-JZ-Rib" firstAttribute="centerY" secondItem="9pQ-8I-hMf" secondAttribute="centerY" id="Tu0-Ou-WCa"/>
+                                                <constraint firstItem="V6o-JZ-Rib" firstAttribute="centerX" secondItem="9pQ-8I-hMf" secondAttribute="centerX" id="Vo8-hD-Mx9"/>
+                                                <constraint firstAttribute="width" constant="44" id="vGx-t7-f3Z"/>
+                                                <constraint firstItem="0j5-65-jgk" firstAttribute="centerY" secondItem="9pQ-8I-hMf" secondAttribute="centerY" id="vie-4c-GPz"/>
+                                                <constraint firstItem="V6o-JZ-Rib" firstAttribute="height" secondItem="0j5-65-jgk" secondAttribute="height" id="wxs-Pz-ur7"/>
+                                            </constraints>
+                                            <connections>
+                                                <outlet property="imageView" destination="0j5-65-jgk" id="82R-JY-mBX"/>
+                                                <outlet property="shadowView" destination="V6o-JZ-Rib" id="QJO-0Q-Fvf"/>
+                                            </connections>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ifv-qW-a2D">
+                                            <rect key="frame" x="52.000000000000014" y="11.333333333333336" width="255.33333333333337" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="9pQ-8I-hMf" secondAttribute="bottom" id="ANN-dG-AzS"/>
+                                        <constraint firstItem="9pQ-8I-hMf" firstAttribute="leading" secondItem="6IY-g8-nLH" secondAttribute="leading" id="RT5-Mb-xit"/>
+                                        <constraint firstItem="Ifv-qW-a2D" firstAttribute="centerY" secondItem="6IY-g8-nLH" secondAttribute="centerY" id="dUk-K8-m9u"/>
+                                        <constraint firstItem="Ifv-qW-a2D" firstAttribute="leading" secondItem="9pQ-8I-hMf" secondAttribute="trailing" constant="8" symbolic="YES" id="lKj-bN-VAr"/>
+                                        <constraint firstItem="9pQ-8I-hMf" firstAttribute="top" secondItem="6IY-g8-nLH" secondAttribute="top" id="nL6-sv-Z21"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="Ifv-qW-a2D" secondAttribute="trailing" constant="5" id="y5L-aK-eza"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="avatarView" destination="9pQ-8I-hMf" id="vhu-aJ-4Tj"/>
+                                    <outlet property="nameLabel" destination="Ifv-qW-a2D" id="hOU-0O-FE5"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <sections/>
@@ -231,7 +280,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0hV-0w-gYw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2022" y="832"/>
+            <point key="canvasLocation" x="2021.5384615384614" y="831.75355450236964"/>
         </scene>
         <!--Photos-->
         <scene sceneID="FCb-Xy-nhz">
@@ -314,6 +363,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="37B-R8-1Yu"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CQK-5J-2RS">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -333,6 +383,9 @@
         <image name="vklogo_400" width="200" height="200"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
